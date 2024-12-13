@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rajdhani", sans-serif;
+    list-style: none !important;
+    text-decoration: none !important;
 }
 
 /* utility classes */
@@ -16,8 +18,7 @@ header {
     height: 240px;
     position: absolute;
     width: 100%;
-    vertical-align: middle;
-    z-index: 99999;
+    z-index: 99;
 }
 
 .main-section {
@@ -109,6 +110,31 @@ header {
     top: 0;
     right: -82px;
     z-index: 999;
+}
+
+.menu-icon{
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+}
+.icon-1{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    transition: 0.3s all linear;
+}
+.icon-2{
+    position: relative;
+    right: 0px;
+    transition: 0.3s all linear;
+}
+.menu-icon-hover:hover .icon-1{
+    left: 0;
+}
+.menu-icon-hover:hover .icon-2{
+    right: -20px;
 }
 
 .back-image {
@@ -316,7 +342,7 @@ header {
     width: 20%;
     height: 2px;
     top: 10px;
-    right: -5px;
+    right: -13px;
     background-color: #6b54b6;
     transform: rotate(45deg);
 }
@@ -327,7 +353,7 @@ header {
     width: 20%;
     height: 2px;
     bottom: 10px;
-    left: -5px;
+    left: -13px;
     background-color: #6b54b6;
     transform: rotate(45deg);
 }
@@ -415,4 +441,128 @@ input::placeholder {
     font-size: 15px;
     font-weight: 600;
     color: #c3bcae !important;
+}
+
+
+.logo-slider {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.logo-slider img {
+    box-shadow: none;
+    color: #fff;
+}
+
+.pb-130 {
+    padding-bottom: 130px;
+}
+
+.logo-slider img:nth-child(1) {
+    position: absolute;
+    display: none;
+    transition: 1s all ease-in-out;
+
+}
+
+.logo-slider:hover img:nth-child(2) {
+    visibility: hidden;
+}
+
+.logo-slider:hover img:nth-child(1) {
+    display: inline-block;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.product-info span {
+    color: #6b54b6;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.newslater {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.newslater button {
+    padding: 12px 58px;
+    border: none;
+    background-color: #ff3147;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%, 0 0);
+}
+
+.newslater input {
+    background-color: #22152c;
+    width: 50%;
+    letter-spacing: 2px;
+    border: none !important;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    color: #fff;
+}
+
+.newslater input:focus {
+    outline: 0;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
+.py-170 {
+    padding: 170px 0;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.button-5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.button-5::before {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    top: 10px;
+    right: -13px;
+    background-color: #6b54b6;
+    transform: rotate(45deg);
+}
+
+.button-5::after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: 10px;
+    left: -13px;
+    background-color: #6b54b6;
+    transform: rotate(45deg);
+}
+
+footer {
+    padding: 44px 0;
+    background-color: #150f1a;
 }

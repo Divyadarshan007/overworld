@@ -1,0 +1,139 @@
+@media (max-width : 1200px) {
+    .team-image2 img {
+        left: 65% !important;
+    }
+
+    .team-box {
+        margin-top: 40px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .match-box {
+        padding: 0px !important;
+    }
+
+}
+
+@media (max-width : 992px) {
+    .match-heading h1 {
+        font-size: 60px;
+    }
+
+    .match-heading {
+        margin-bottom: 100px;
+    }
+
+    .main-home-image a img {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width : 865px) {
+    .center-buttons {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width : 768px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blog-image img {
+        width: 400px;
+    }
+
+    .merch-image img {
+        width: 400px;
+    }
+
+    .match-heading h1 {
+        font-size: 40px;
+    }
+
+    .match-heading {
+        margin-bottom: 80px;
+    }
+
+    .text h3 {
+        font-size: 25px;
+    }
+
+    .newslater {
+        flex-direction: column;
+    }
+
+    .newslater input {
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width : 572px) {
+    .pr-20 {
+        padding-right: 20px;
+    }
+
+    .match-heading h1 {
+        font-size: 20px;
+    }
+
+    .match-heading {
+        margin-bottom: 80px;
+    }
+
+    .team-image2 img {
+        left: 55% !important;
+        top: -20px;
+        width: 120px;
+    }
+
+    .team-image img {
+        width: 120px !important;
+        top: -25px;
+    }
+
+    .team-box {
+        margin-top: 40px;
+    }
+
+    .blog-image img {
+        width: 250px;
+    }
+
+    .merch-image img {
+        width: 250px;
+    }
+
+    .team-name span {
+        font-size: 25px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+
+    .font-60 {
+        font-size: 50px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+}
