@@ -112,28 +112,32 @@ header {
     z-index: 999;
 }
 
-.menu-icon{
+.menu-icon {
     display: inline-block;
     width: 40px;
     height: 3px;
     background-color: #fff;
     position: relative;
 }
-.icon-1{
+
+.icon-1 {
     position: absolute;
     top: 5px;
     left: 15px;
     transition: 0.3s all linear;
 }
-.icon-2{
+
+.icon-2 {
     position: relative;
     right: 0px;
     transition: 0.3s all linear;
 }
-.menu-icon-hover:hover .icon-1{
+
+.menu-icon-hover:hover .icon-1 {
     left: 0;
 }
-.menu-icon-hover:hover .icon-2{
+
+.menu-icon-hover:hover .icon-2 {
     right: -20px;
 }
 
@@ -147,6 +151,25 @@ header {
 .main-home-image {
     text-align: center;
     padding-block-start: 150px;
+
+}
+
+.main-home-image {
+    animation: fade-in linear forwards;
+    animation-timeline: view(90% auto);
+
+}
+
+@keyframes fade-in {
+    from {
+        scale: 0.3;
+        opacity: 0;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .play-button {
@@ -565,4 +588,59 @@ ul li a {
 footer {
     padding: 44px 0;
     background-color: #150f1a;
+}
+
+.left-translate {
+    animation: translate-left linear;
+    animation-timeline: view(70% auto);
+}
+
+.right-translate {
+    animation: translate-right linear;
+    animation-timeline: view(70% auto);
+}
+
+@keyframes translate-left {
+    from {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes translate-right {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-inline: auto;
+    animation: typing 3s steps(18);
+    animation-timeline: view(30% auto);
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        
+    }
+    
+    to {
+        width: 100%;
+       
+    }
 }
